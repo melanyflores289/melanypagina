@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: exo 2;
+    background-image: url(fonod.jpg);
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+}
+header {
+    background-color: rgb(0, 0, 0);
+    background-image: url(portada.gif.jpeg);
+    padding: 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    color: white;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: rgb(35, 35, 209);
+    
+}
+
+.contenedor {
+    width: 100%;
+  }
+  
+  .item {
+    margin-bottom: 20px; /* Espacio entre cada conjunto de imagen y texto */
+    overflow: hidden; /* Contiene el float para evitar problemas de diseño */
+  }
+  
+  img {
+    float: left;
+    margin-right: 10px;
+  }
+  
+  p {
+    margin-left: 10px;
+
+  }
+  
+  /* Limpieza de float para evitar que los elementos siguientes se vean afectados */
+  .contenedor:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+.gabinete-image img {
+    max-width: 100%; /* Hace que la imagen sea 100% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+section {
+    margin-top: 0px; /* Ajusta según la altura de tu barra de navegación */
+    padding: 150px;
+    background-color: rgba(225, 226, 241, 0.571);
+    color: #333;
+    min-height: 600px; /* Ajusta según tus necesidades */
+    font-size: 20px;
+}
+
+  
+  .recuadro img {
+    width: 300px; /* Ajusta el ancho según tus necesidades */
+    height: auto;
+    margin-right: 150px; /* Espacio entre las imágenes */
+  }
+  table {
+    font-size: 18px;
+    border-color: #0a0a0a;
+    width: 50%;
+    margin: 20px auto; /* Centrar la tabla */
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden; /* Evita que los bordes redondeados se vean afectados por el desbordamiento de contenido */
+}
+
+table, th, td {
+    border: 1px solid #0a0a0a; /* Bordes con color gris */
+}
+
+th, td {
+    padding: 15px;
+    text-align: center; /* Centrar contenido */
+    border-color: #0a0a0a;
+}
+
+th {
+    background-color: #4CAF50; /* Color de fondo para las celdas de encabezado */
+    color: white;
+    border-color: #0a0a0a;
+}
+
+tr:nth-child(even) {
+    border-color: #0a0a0a;
+    background-color: #f2f2f2; /* Color de fondo para filas pares */
+}
+.container {
+    
+    max-width: 1200px;
+    background-color: #f1dfdf70;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 8px;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    margin-bottom: 16px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #bbc78b;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  button:hover {
+    background-color: #c2c5a3c6;
+  }
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo {
+        margin-bottom: 10px;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 0 5px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
